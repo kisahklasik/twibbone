@@ -5,7 +5,7 @@
 
 <meta charset="utf-8" />
 <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!--<meta name="viewport" content="width=device-width, initial-scale=1" />-->
 <link rel="stylesheet" href="app.css">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -21,10 +21,11 @@
 <div id="wrap">
 <p><canvas id="c">Your browser does not support the canvas element.</canvas></p>
 </div>
-<div id="buttons">
+<p>
 <button onclick="selectFile()">PILIH FILE</button>
 <button id="save">DOWNLOAD</button>
 <button id="shared">SHARE</button>
+</p>
 </article>
 <footer>
 <p><a target="_blank" rel="noopener" href="#">Dibuat dengan Secangkir Kopi dan Rokok oleh Ferry Ayunda.</a></p>
@@ -59,7 +60,7 @@ canvas.add(img).setActiveObject(img).renderAll();
 reader.readAsDataURL(e.target.files[0]);
 }
 
-fabric.Image.fromURL('image.png', function(img) {
+fabric.Image.fromURL('img.png', function(img) {
 canvas.setOverlayImage(img, canvas.renderAll.bind(canvas));
 });
 	
