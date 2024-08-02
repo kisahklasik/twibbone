@@ -66,7 +66,7 @@ canvas.add(img).setActiveObject(img).renderAll();
 reader.readAsDataURL(e.target.files[0]);
 }
 
-fabric.Image.fromURL('cvs.png', function(img) {
+fabric.Image.fromURL('image.png', function(img) {
 canvas.setOverlayImage(img, canvas.renderAll.bind(canvas));
 });
 	
