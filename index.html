@@ -121,6 +121,16 @@ function onOFF() {
 var x = document.getElementById("uploader");
 x.disabled = true;
 }
+
+// empty file
+$('#save').bind("click",function() { 
+var imgVal = $('#uploader').val(); 
+if(imgVal=='') { 
+alert("empty input file"); 
+} else {
+alert('file fill in');
+}
+}); 
 </script>
 </body>
 </html>
