@@ -90,7 +90,7 @@ saveAs(blob, "image.png");
 
 // share
 document.getElementById("shared").addEventListener("click", () => {
-alert("share image");
+alert("Bagikan Twibbon ini ke media sosial Anda?");
 const dataUrl = c.toDataURL(); 
 fetch(dataUrl)
 .then(res => res.blob())
@@ -126,7 +126,7 @@ x.disabled = true;
 $('#save').bind("click",function() { 
 var imgVal = $('#uploader').val(); 
 if(imgVal=='') { 
-alert("empty input file"); 
+alert("Tidak ada file yang dipilih!"); 
 } else {
 console.log('file fill in');
 }
