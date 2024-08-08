@@ -5,35 +5,13 @@
 
 <meta charset="utf-8" />
 <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!--<meta name="viewport" content="width=device-width, initial-scale=1" />-->
 <link rel="stylesheet" href="app.css">
 
 <script src="jquery.min.js"></script>
 <script src="fabric.min.js"></script>
 <script src="FileSaver.js"></script>
 <script src="canvas-toBlob.js"></script>
-<style>
-.box {
-background-color: #f0f0f2;
-position: relative;
-overflow: hidden;
-width: 100%;
-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
-aspect-ratio: 1/1;
-}
-.box #c  {
-position: absolute;
-top: 50%;
-left: 50%;
--webkit-transform: translate(-50%,-50%);
--ms-transform: translate(-50%,-50%);
-transform: translate(-50%,-50%);
-width: 100%;
-aspect-ratio: 1/1;
--o-object-fit:cover;
-object-fit:cover;
-}
-</style>
 </head>
 
 <body>
@@ -41,9 +19,7 @@ object-fit:cover;
 <article>
 <h1>FREE AND SIMPLE PFP GENERATOR</h1>
 <input type="file" id="uploader" accept="image/*">
-<div id="box">
-<p><canvas id="c">Your browser does not support the canvas element.</canvas></p>
-</div>
+<p><canvas id="c">Your browser does not support the canvas element.</canvas></p
 <p>
 <button onclick="selectFile()">PILIH FILE</button>
 <button id="save" onclick="onOFF()">DOWNLOAD</button>
