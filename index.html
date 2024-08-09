@@ -130,5 +130,12 @@ button.disabled = input === '';
 share.disabled = input === '';
 }
 </script>
+<script>
+const btn = document.getElementById("save");
+setTimeout(() => {
+btn.disabled = true;
+btn.textContent = "Terunduh!";
+}, 3000);
+</script>
 </body>
 </html>
