@@ -121,5 +121,12 @@ var input = document.getElementById("uploader");
 input.disabled = true;
 }
 </script>
+<script>
+function checkInput() {
+var input = document.getElementById('uploader').value;
+var button = document.getElementById('save');
+button.disabled = input === '';
+}
+</script>
 </body>
 </html>
