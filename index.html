@@ -18,11 +18,11 @@
 <span class="bg"></span>
 <article>
 <h1>FREE AND SIMPLE PFP GENERATOR</h1>
-<input type="file" id="uploader" oninput="checkInput()" accept="image/*">
+<input type="file" id="uploader" accept="image/*">
 <p><canvas id="c">Your browser does not support the canvas element.</canvas></p
 <p>
 <button onclick="selectFile()">PILIH FILE</button>
-<button id="save" onclick="onOFF()">DOWNLOAD</button>
+<button id="save">DOWNLOAD</button>
 <button id="shared">SHARE</button>
 </p>
 <h1>Tutorial:</h1>
@@ -114,30 +114,6 @@ alert('navigator.share not available');
 }
 })
 });
-
-//function onOFF() {
-//var x = document.getElementById("uploader");
-//x.disabled = true;
-//}
-
-// empty file
-//$('#save').bind("click",function() { 
-//var imgVal = $('#uploader').val(); 
-//if(imgVal=='') { 
-//alert("Tidak ada file yang dipilih!"); 
-//} else {
-//console.log('file fill in');
-//}
-//}); 
-</script>
-<script>
-function checkInput() {
-var img = document.getElementById('uploader').value;
-//var mask = document.getElementById('maskInp').value;
-var dl = document.getElementById('save');
-dl.disabled = img === '';
-//save.disabled = mask === '';
-}
 </script>
 </body>
 </html>
