@@ -2,10 +2,9 @@ body {
 background-color: #f0f0f2;
 margin: 0;
 padding: 0;
-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        
+font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;       
 }
-div {
+article {
 width: 600px;
 margin: 5em auto;
 padding: 2em;
@@ -17,8 +16,14 @@ a:link, a:visited {
 color: #38488f;
 text-decoration: none;
 }
+input[type="file"] {
+display:none;
+}
+button[onclick*="()"] {
+cursor:pointer;
+}
 @media (max-width: 700px) {
-div {
+article {
 margin: 0 auto;
 width: auto;
 }
