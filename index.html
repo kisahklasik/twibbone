@@ -88,8 +88,8 @@ saveAs(blob, "image.png");
 
 // share
 document.getElementById("shared").addEventListener("click", () => {
-//alert("Bagikan Twibbon ini ke media sosial Anda?");
-btn.textContent = "Terunduh!";
+alert("Bagikan Twibbon ini ke media sosial Anda?");
+
 const dataUrl = c.toDataURL(); 
 fetch(dataUrl)
 .then(res => res.blob())
