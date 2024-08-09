@@ -125,7 +125,9 @@ input.disabled = true;
 function checkInput() {
 var input = document.getElementById('uploader').value;
 var button = document.getElementById('save');
+var share = document.getElementById('shared');
 button.disabled = input === '';
+share.disabled = input === '';
 }
 </script>
 </body>
