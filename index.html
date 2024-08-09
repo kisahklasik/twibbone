@@ -115,20 +115,29 @@ alert('navigator.share not available');
 })
 });
 
-function onOFF() {
-var x = document.getElementById("uploader");
-x.disabled = true;
-}
+//function onOFF() {
+//var x = document.getElementById("uploader");
+//x.disabled = true;
+//}
 
 // empty file
-$('#save').bind("click",function() { 
-var imgVal = $('#uploader').val(); 
-if(imgVal=='') { 
-alert("Tidak ada file yang dipilih!"); 
-} else {
-console.log('file fill in');
+//$('#save').bind("click",function() { 
+//var imgVal = $('#uploader').val(); 
+//if(imgVal=='') { 
+//alert("Tidak ada file yang dipilih!"); 
+//} else {
+//console.log('file fill in');
+//}
+//}); 
+</script>
+<script>
+function checkInput() {
+var img = document.getElementById('uploader').value;
+//var mask = document.getElementById('maskInp').value;
+var dl = document.getElementById('save');
+dl.disabled = img === '';
+//save.disabled = mask === '';
 }
-}); 
 </script>
 </body>
 </html>
