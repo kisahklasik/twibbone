@@ -119,6 +119,7 @@ alert('navigator.share not available');
 function dL() {
 var input = document.getElementById("uploader");
 input.disabled = true;
+input.textContent = "File dipilih!";
 }
 </script>
 <script>
@@ -129,13 +130,6 @@ var share = document.getElementById('shared');
 button.disabled = input === '';
 share.disabled = input === '';
 }
-</script>
-<script>
-const btn = document.getElementById("save");
-setTimeout(() => {
-btn.disabled = true;
-btn.textContent = "Terunduh!";
-}, 3000);
 </script>
 </body>
 </html>
